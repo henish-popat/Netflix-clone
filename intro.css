@@ -46,14 +46,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   background:
     linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
-    url("../assets/banner.png");
+    url("assets/banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  position: relative;
 }
 
 .banner-content {
