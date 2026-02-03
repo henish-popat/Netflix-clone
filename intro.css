@@ -46,7 +46,7 @@ body {
   align-items: center;
   background:
     linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
-    url("assets/ChatGPT Image Feb 3, 2026, 04_25_11 PM.png");
+    url("assets/banner.png");
   background-size: cover;
   background-position: center;
 }
@@ -107,4 +107,4 @@ body {
 .movie-card p {
   margin-top: 8px;
   font-size: 14px;
-}
+}  
