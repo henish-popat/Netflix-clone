@@ -33,11 +33,6 @@ body {
   font-size: 14px;
 }
 
-/* HERO BANNER */
-body {
-  background: #111;
-  color: white;
-}
 
 /* HERO */
 .banner {
@@ -108,3 +103,4 @@ body {
   margin-top: 8px;
   font-size: 14px;
 }  
+
