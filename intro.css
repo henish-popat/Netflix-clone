@@ -42,45 +42,29 @@ body {
    HERO BANNER
 ========================= */
 .banner {
-  height: 90vh; /* 90% of viewport height */
+  height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: center; /* center content horizontally */
+  justify-content: center;
+  position: relative;
   background:
-    linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)), /* dark overlay */
-    url("../assets/banner.png"); /* adjust path based on CSS file location */
+    linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+    url("../assets/banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
 }
 
-/* =========================
-   MOVIE CARD
-========================= */
-.movie-card {
+.banner-content {
   text-align: center;
 }
 
-.movie-card img {
-  width: 160px;
-  border-radius: 6px;
-  transition: transform 0.3s;
-  cursor: pointer;
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
-.movie-card img:hover {
-  transform: scale(1.1);
-}
-
-.movie-card p {
-  margin-top: 8px;
-  font-size: 14px;
-}
-
-/* =========================
-   BUTTONS
-========================= */
 .buttons button {
   padding: 10px 24px;
   font-size: 16px;
@@ -110,16 +94,20 @@ body {
 }
 
 /* =========================
-   ROW / CAROUSEL
+   ROW / MOVIE CARDS
 ========================= */
 .row {
   padding: 40px 60px;
 }
 
+.row h2 {
+  margin-bottom: 20px;
+}
+
 .row-posters {
   display: flex;
   gap: 20px;
-  overflow-x: auto; /* allows horizontal scroll if too many cards */
+  overflow-x: auto;
   scrollbar-width: thin;
 }
 
@@ -130,4 +118,24 @@ body {
 .row-posters::-webkit-scrollbar-thumb {
   background-color: rgba(255,255,255,0.3);
   border-radius: 3px;
+}
+
+.movie-card {
+  text-align: center;
+}
+
+.movie-card img {
+  width: 160px;
+  border-radius: 6px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.movie-card img:hover {
+  transform: scale(1.1);
+}
+
+.movie-card p {
+  margin-top: 8px;
+  font-size: 14px;
 }
