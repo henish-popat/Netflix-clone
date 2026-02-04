@@ -193,4 +193,79 @@ body {
   }
 }
 
+/* RECOMMENDED MOVIES */
+.movie-card.recommended img {
+  width: 160px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.movie-card.recommended:hover img {
+  transform: scale(1.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+
+/* HORIZONTAL SCROLL ROW */
+.recommended-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin; /* Firefox */
+}
+
+.recommended-row::-webkit-scrollbar {
+  height: 6px; /* horizontal scrollbar height */
+}
+
+.recommended-row::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+/* Poster style */
+.recommended-row .movie-card img {
+  width: 160px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.recommended-row .movie-card:hover img {
+  transform: scale(1.15);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+  z-index: 10;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.movie-card.recommended {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.recommended-row .movie-card {
+  animation: fadeUp 0.6s ease forwards;
+}
+
 
